@@ -17,12 +17,6 @@ const Postagem = sequelize.define('postagens', {
   }
 })
 
-Postagem.create({
-  titulo: "Alo",
-  conteudo: "çkjasldhkjplas"
-})
-
-
 const Usuario = sequelize.define('usuarios', {
   nome: {
     type: Sequelize.STRING
@@ -37,3 +31,20 @@ const Usuario = sequelize.define('usuarios', {
     type: Sequelize.STRING
   }
 })
+
+/* 
+ *Cria a tabela
+
+  Postagem.sync({force: true})
+*/
+
+/*
+  *Insere os dados na tabela Postagem
+
+  Postagem.create({
+    titulo: "Postagem 1",
+    conteudo: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quia officiis doloribus cumque reiciendis libero minus magnam blanditiis dolor assumenda impedit temporibus obcaecati facilis sequi consequuntur esse ipsam expedita, delectus omnis."
+  })
+*/
+
+
