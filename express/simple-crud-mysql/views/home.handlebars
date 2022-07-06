@@ -1,0 +1,12 @@
+<a href="/add"><button type="button">Adicionar novo post</button></a>
+<h1>Lista de posts: </h1>
+
+{{#each posts}}
+
+<h3> {{titulo}} </h3>
+<p> {{conteudo}} </p>
+
+<a href="update/{{id}}"> <button>Editar</button></a>
+<a href="delete/{{id}}"> <button>Deletar</button></a>
+<hr>
+{{/each}}

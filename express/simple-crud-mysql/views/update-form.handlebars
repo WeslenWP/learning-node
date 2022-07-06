@@ -1,0 +1,8 @@
+<form action="/update/{{post.id}}" method="POST">
+  <p>Titulo: </p>
+  <input type="text" name="titulo" value="{{post.titulo}}">
+  <p>Conteudo: </p>
+  <textarea name="conteudo">{{post.conteudo}}</textarea>
+  <br>
+  <button button type="submit">Atualizar</button>
+</form>
