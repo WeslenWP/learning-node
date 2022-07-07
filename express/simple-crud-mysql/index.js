@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const handlebars = require('express-handlebars');
-const bodyParser = require("body-parser");
 const Post = require('./models/Post');
 
 /* Config */
@@ -16,8 +15,8 @@ app.engine('handlebars', handlebars.engine({
 app.set('view engine', 'handlebars');
 
 // Body Parser
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 /**Fim Config */
 

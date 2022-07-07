@@ -1,11 +1,10 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 
 const userRoute = require('./routes/userRoute');
 
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));
 
 userRoute(app);
 
